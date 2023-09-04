@@ -55,6 +55,7 @@ public class OrderController {
         orderToAdd.setProductCollections(productCollections);
         orderToAdd.setPrice(total);
         orderToAdd.setQuantity(productCollections.size());
+        orderToAdd.setId_seller(order.getIdseller());
         Order savedOrder = orderService.add(orderToAdd);
         for (Product product : productCollections) {
             product.getOrders().add(savedOrder);

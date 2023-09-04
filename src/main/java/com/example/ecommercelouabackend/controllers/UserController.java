@@ -159,4 +159,9 @@ return 0;
     public ResponseEntity<User> changeRoleToSELLER(@RequestParam String idUser){
      return  ResponseEntity.ok(this.userService.changeRoleToSeller(idUser));
     }
+    @GetMapping("/getVendeurlist")
+    public List<User> getVendeurlist() {
+        return this.userService.getVendeurlist();
+    }
+
 }

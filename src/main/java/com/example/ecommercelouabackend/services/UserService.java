@@ -61,4 +61,8 @@ public class UserService implements ICurd<User> {
         return this.userRepo.save(user);
 
     }
+
+    public List<User> getVendeurlist() {
+        return this.userRepo.findAllByRole(Role.SELLER);
+    }
 }

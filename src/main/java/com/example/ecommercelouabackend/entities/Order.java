@@ -42,7 +42,7 @@ public class Order {
     @JsonIgnoreProperties("orders")
     private User user;
 
-
+    private Long id_seller;
     @ManyToOne
     private Delivery delivery;
 

@@ -11,4 +11,5 @@ import java.util.List;
 public class OrderDetailsDTO {
     private List<ProductOrderDTO> orderDetails;
     private Long userid;
+    private Long idseller;
 }
